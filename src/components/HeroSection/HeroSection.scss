@@ -1,0 +1,72 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('./hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    
+    /* Add padding-top to ensure the navbar is not covered by the hero section */
+    padding-top: 60px;  /* Adjust based on your navbar height */
+    
+    &-content {
+      z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+
+      .hero-title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .hero-subtitle {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .btn {
+          padding: 12px 30px;
+          font-size: 1rem;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background 0.3s ease;
+
+          &.btn-primary {
+            background-color: #f39c12;
+            color: white;
+          }
+
+          &.btn-secondary {
+            background-color: transparent;
+            border: 2px solid #f39c12;
+            color: #f39c12;
+          }
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+
+    /* Optional: Add overlay to darken background image */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+}
