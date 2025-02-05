@@ -1,85 +1,81 @@
 .programs-courses {
-    padding: 50px 20px;
-    background-color: #f3f3f3;
+    padding: 60px 20px;
+    background-color: #ffe96d;
     color: #333;
+    text-align: center;
   
     .programs-courses-content {
       max-width: 1200px;
       margin: 0 auto;
-      text-align: center;
   
       .section-title {
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 40px;
+        color: #2c3e50;
       }
   
       .section-subtitle {
         font-size: 2rem;
         font-weight: bold;
-        color: #f39c12;
+        color: #e67e22;
         margin-bottom: 30px;
       }
   
-      .featured-programs {
-        margin-bottom: 40px;
-  
-        .programs-list {
-          display: flex;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          gap: 20px;
-  
-          .program-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 30%;
-            text-align: left;
-            transition: transform 0.3s ease;
-  
-            h4 {
-              font-size: 1.8rem;
-              color: #f39c12;
-              margin-bottom: 15px;
-            }
-  
-            p {
-              font-size: 1.1rem;
-              margin-bottom: 20px;
-            }
-  
-            &:hover {
-              transform: translateY(-10px);
-            }
-  
-            .btn-secondary {
-              padding: 10px 25px;
-              background-color: #f39c12;
-              color: white;
-              border-radius: 5px;
-              text-decoration: none;
-              font-size: 1rem;
-              transition: opacity 0.3s ease;
-            }
-  
-            .btn-secondary:hover {
-              opacity: 0.8;
-            }
-          }
-        }
+      .programs-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
       }
   
-      .course-highlights {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-top: 20px;
-        max-width: 900px;
-        margin: 0 auto;
+      .program-card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 320px;  // Fixed width
+        height: 250px; // Fixed height for uniformity
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  // Ensures even spacing
+        align-items: center;
+        margin: 10px auto;
+  
+        h4 {
+          font-size: 1.5rem;
+          color: #e67e22;
+          margin-bottom: 10px;
+        }
   
         p {
-          margin-bottom: 20px;
+          font-size: 1rem;
+          color: #555;
+          text-align: center;
+          flex-grow: 1;  // Ensures text adjusts dynamically
+          overflow: hidden;
+        }
+  
+        .btn-secondary {
+          padding: 10px 18px;
+          background-color: #e67e22;
+          color: white;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: bold;
+          transition: background 0.3s ease;
+        }
+  
+        .btn-secondary:hover {
+          background-color: #d35400;
+        }
+  
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
         }
       }
     }

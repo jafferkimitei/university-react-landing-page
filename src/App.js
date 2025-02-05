@@ -6,7 +6,6 @@ import AboutSection from './components/AboutSection/AboutSection';
 import ProgramsAndCoursesSection from './components/ProgramsAndCoursesSection/ProgramsAndCoursesSection';
 import StudentLifeSection from './components/StudentLifeSection/StudentLifeSection';
 import AdmissionsSection from './components/AdmissionsSection/AdmissionsSection';
-import FacultyStaffSection from './components/FacultyStaffSection/FacultyStaffSection';
 import NewsEventsSection from './components/NewsEventsSection/NewsEventsSection';
 import ContactSection from './components/ContactSection/ContactSection';
 import FooterSection from './components/FooterSection/FooterSection';
@@ -20,7 +19,6 @@ const App = () => {
       <ProgramsAndCoursesSection />
       <StudentLifeSection />
       <AdmissionsSection />
-      <FacultyStaffSection />
       <NewsEventsSection />
       <ContactSection />
       <FooterSection />

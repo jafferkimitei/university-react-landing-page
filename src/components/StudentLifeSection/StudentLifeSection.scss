@@ -1,98 +1,129 @@
 .student-life {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    color: #333;
-  
-    .student-life-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      text-align: center;
-  
-      .section-title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 40px;
-      }
-  
-      .section-subtitle {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #f39c12;
-        margin-bottom: 30px;
-      }
-  
-      .campus-activities {
-        margin-bottom: 40px;
-  
-        .activities-list {
-          list-style-type: none;
-          padding: 0;
-          font-size: 1.2rem;
-          line-height: 1.6;
-          margin-top: 20px;
-  
-          li {
-            margin-bottom: 10px;
-          }
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fffefb, #ffffff);
+  color: #333;
+  text-align: center;
+
+  .student-life-content {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .section-subtitle {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #f39c12;
+      margin-bottom: 25px;
+    }
+
+    /* 🎭 Masonry Grid for Activities */
+    .activities {
+      margin-bottom: 50px;
+
+      .masonry-grid {
+        display: flex;
+        margin-left: -10px;
+
+        .masonry-column {
+          padding-left: 10px;
+          background-clip: padding-box;
         }
-      }
-  
-      .testimonials {
-        margin-bottom: 40px;
-  
-        .testimonial-cards {
-          display: flex;
-          justify-content: space-around;
-          flex-wrap: wrap;
-          gap: 20px;
-  
-          .testimonial-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 30%;
+
+        .activity-card {
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          margin-bottom: 15px;
+
+          .activity-image {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
             text-align: center;
-            transition: transform 0.3s ease;
-            margin-bottom: 30px;
-  
-            p {
-              font-size: 1.1rem;
-              margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+          }
+
+          &:hover {
+            .activity-image {
+              transform: scale(1.05);
             }
-  
-            span {
-              font-weight: bold;
-              font-size: 1.2rem;
-              color: #f39c12;
-            }
-  
-            &:hover {
-              transform: translateY(-10px);
+            .overlay {
+              background: rgba(0, 0, 0, 0.8);
             }
           }
         }
       }
-  
-      .gallery {
-        .gallery-images {
-          display: flex;
-          justify-content: center;
-          gap: 20px;
-          flex-wrap: wrap;
-  
-          .gallery-image {
-            width: 45%;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+    }
+
+    /* 💬 Testimonials */
+    .testimonials {
+      margin-bottom: 60px;
+
+      .testimonial-slider {
+        max-width: 700px;
+        margin: 0 auto;
+
+        .testimonial-card {
+          background: white;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          transition: transform 0.3s ease-in-out;
+
+          p {
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 15px;
           }
-  
-          .gallery-image:hover {
+
+          span {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #f39c12;
+          }
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+
+    /* 📸 Gallery */
+    .gallery {
+      .gallery-slider {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
             transform: scale(1.05);
           }
         }
       }
     }
   }
-  
+}
